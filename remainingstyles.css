@@ -1,0 +1,320 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6fa; /* Lavender background color */
+}
+
+header {
+    background-color: #9370db; /* Lavender purple color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/*nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+*/
+
+/* Add this CSS to your existing styles.css file */
+
+/* Add this CSS to your existing styles.css file */
+
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #2c3e50; /* Set your preferred hover color */
+}
+
+
+
+
+
+/* Add this CSS to your existing styles.css file 
+
+
+nav {
+    background-color: #34495e; 
+    height: 100vh; 
+    width: 150px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #2c3e50; /* Set your preferred hover color */
+}
+
+*/
+
+
+
+
+
+
+
+
+#main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #9370db; /* Lavender purple color */
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#confetti {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #9370db; /* Lavender purple color */
+    border-radius: 50%;
+    animation: confetti-fall linear infinite;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-120vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#photo-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.photo {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    /* Remove or adjust the border-radius property */
+    /* border-radius: 50%; */ 
+    border-radius: 10px; /* Or set a specific border-radius value for a rounded corner */
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-photo {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border-radius: 30%;
+    margin-right: 700px; /* Adjust the margin as needed */
+    object-fit: cover;
+}
+
+
+.photo:hover {
+    transform: scale(1.1);
+}
+
+
+/* Memories related code
+
+.memoriesphoto-memories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.memoriesphoto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.memoriesphoto img {
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.memoriesoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.memoriesphoto:hover {
+    transform: scale(1.026);
+}
+
+.memoriesphoto:hover .overlay {
+    opacity: 1;
+}
+
+.memoriesoverlay h3 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+*/
+
+
+/* Memories related code */
+/* Memories related code */
+.memoriesphoto-memories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.memoriesphoto {
+    flex: 0 0 calc(33.333% - 10px); /* Adjust the width as needed */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.memoriesphoto img {
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.memoriesoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.memoriesphoto:hover {
+    transform: scale(1.026);
+}
+
+.memoriesphoto:hover .memoriesoverlay {
+    opacity: 1;
+}
+
+.memoriesoverlay h3 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
