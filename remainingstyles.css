@@ -161,6 +161,11 @@ h2 {
     margin-bottom: 10px;
 }
 
+.centered-heading {
+    text-align: center; /* Center text horizontally */
+    transform: translateY(-50%);
+}
+
 h3 {
     font-size: 20px;
     color: #ff4500;
@@ -280,7 +285,7 @@ p {
 }
 
 .memoriesphoto img {
-    width: 10%;
+    width: 32%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
