@@ -65,8 +65,7 @@ nav a:hover {
 
 
 
-/* Add this CSS to your existing styles.css file 
-
+/*
 
 nav {
     background-color: #34495e; 
@@ -98,27 +97,23 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #2c3e50; /* Set your preferred hover color */
+    background-color: #2c3e50; 
 }
+
 
 */
 
 
 
-
-
-
-
-
 #main-content {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+	
 footer {
     background-color: #9370db; /* Lavender purple color */
     color: #fff;
@@ -317,4 +312,57 @@ p {
     color: #fff;
     text-align: center;
     margin: 0;
+}
+
+
+/*childhood styles*/
+
+.image-container {
+      display: flex;
+      justify-content: center;
+      height: 400px; /* Adjust as needed */
+      overflow: hidden;
+    }
+
+    /* Style for the image slider */
+    .image-slider {
+      display: flex;
+      animation: slide-animation 10s infinite alternate; /* Adjust animation speed */
+    }
+
+    /* Keyframes for the slide animation */
+    @keyframes slide-animation {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Style for individual images */
+    .image-slide {
+      width: 100%;
+      height: auto;
+    }
+	
+	
+	
+/*lock.html*/
+
+input[type="password"] {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #9370db;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
