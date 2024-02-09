@@ -117,12 +117,12 @@ nav a:hover {
 
 
 #main-content {
-    max-width: 1500px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 1470px;
+    margin: 15px auto;
+    padding: 15px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 	
 footer {
@@ -187,7 +187,7 @@ h3 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16.7px;
     line-height: 1.6;
 }
 
@@ -346,13 +346,13 @@ p {
     /* Style for the image slider */
     .image-slider {
       display: flex;
-      animation: slide-animation 10s infinite alternate; /* Adjust animation speed */
+      animation: slide-animation 25s infinite alternate; /* Adjust animation speed */
     }
 
     /* Keyframes for the slide animation */
     @keyframes slide-animation {
       0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
+      100% { transform: translateX(-600%); }
     }
 
     /* Style for individual images */
@@ -385,3 +385,43 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+
+/* About me styles */
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+    width: 65%;
+    height: 100vh; /* Adjust to fit your needs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide {
+    position: absolute;
+    bottom: 20; /* Move the slide to the bottom */
+    left: 30;
+    transform: translate(55%, -25%);
+    width: 100%;
+    animation: slideInAnimation 2s forwards;
+  }
+  
+  
+  .slide img {
+    width: 40%; /* Make the image fill the container horizontally */
+    height: -10; /* Maintain aspect ratio */
+    /* Add any additional styling properties here */
+    max-width: 40%; /* Make sure the image doesn't exceed the container width */
+    max-height: -50%;
+  }
+  
+  @keyframes slideInAnimation {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
