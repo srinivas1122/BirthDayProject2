@@ -40,13 +40,13 @@ nav {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 10;
     display: flex;
     justify-content: center;
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 10 15px;
 }
 
 nav a {
@@ -63,6 +63,7 @@ nav a:hover {
 
 h1 a {
     text-decoration: none;
+    overflow: hidden;
     padding: 10px 0px;
     color: #080301;
     border-radius: 10px;

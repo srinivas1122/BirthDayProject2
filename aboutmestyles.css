@@ -27,13 +27,13 @@ body {
   
   nav ul {
       list-style: none;
-      padding: 0;
+      padding: 10;
       display: flex;
       justify-content: center;
   }
   
   nav li {
-      margin: 0 15px;
+    margin: 10 15px;
   }
   
   nav a {
