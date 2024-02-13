@@ -346,7 +346,7 @@ p {
     /* Style for the image slider */
     .image-slider {
       display: flex;
-      animation: slide-animation 25s infinite alternate; /* Adjust animation speed */
+      animation: slide-animation 45s infinite alternate; /* Adjust animation speed */
     }
 
     /* Keyframes for the slide animation */
