@@ -23,15 +23,16 @@
         </nav>
     </header>
 <section id="main-content">
-        <h2>How do you call me.?</h2>
+        <h2>How do you call me.? </h2>
   <input type="password" id="password" placeholder="Enter your answer">
   <button onclick="checkPassword()">Submit</button>
+  <h4> Enter the correct answer to see the special surprise!</h4>
   <script>
   
     function checkPassword() {
       var password = document.getElementById("password").value;
       // Replace "yourpassword" with the actual password
-      if (password === "kannaya") {
+      if (password === "kannayya") {
         window.location.href = "surprise.html"; // Redirect to the secured page
       } else {
         alert("Incorrect password. Please try again.");
